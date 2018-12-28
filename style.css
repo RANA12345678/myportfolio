@@ -1,0 +1,224 @@
+/*Font size for root element*/
+body {
+    background-color: rgb(27, 138, 175);
+  }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+:root {
+    font-size: 12px;
+}
+
+/*Style for Navigation bar*/
+ul.parent {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231, 226, 226);
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+ul.parent li a {
+    display: block;
+    color: #06090c;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 6px #0f4874;
+    font-size: 1.3rem;
+}
+
+ul.parent li a:active {
+    background-color: #0c3966;
+    color: white;
+    box-shadow: 0 5px #000000;
+    transform: translateX(4px);
+}
+
+ul.parent li a:hover:not(.active) {
+    background-color: #000000;
+    color: white;
+}
+
+.item {
+    flex: 1;
+}
+
+/*Flex box and media query for Navigation bar*/
+@media all and (max-width: 1180px) {
+    .parent {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        flex: 1 1 50%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .parent {
+        flex-wrap: wrap;
+    }
+
+    .item {
+        flex: 1 1 100%;
+    }
+}
+
+/*Style for each division under container*/
+div.data {
+    border: 2px solid Black;
+    border-radius: 8px;
+    background-color: whitesmoke;
+}
+
+/*Flex box container and data*/
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    flex: 1;
+    border: 1px solid #97d4ec;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px 2px #000000;
+    margin: 0 0 0.5% 0;
+    padding: 0 0 0 1%;
+    flex-wrap: wrap;
+}
+
+/*Style for header, paragraph and fonts*/
+h1 {
+    background: linear-gradient(to right, rgb(243, 61, 234), rgb(66, 62, 62));
+    font-size: 3rem;
+    font-family: Courier;
+    border-radius: 6px;
+    width: 100%;
+}
+
+h2 {
+    background: linear-gradient(to right, rgb(86, 159, 255), rgb(175, 232, 255));
+    font-size: 1rem;
+    font-family: Courier;
+    border-radius: 1px;
+    width: 100%;
+}
+
+
+
+
+h3 {
+    font-size: 1.4rem;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+f1 {
+    font-size: 2.0rem;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    text-align: center;
+    vertical-align: text-top;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Class for styling list elements*/
+ul.design {
+    font-size: 1.5rem;
+}
+
+/*Flex box for Myself*/
+.about {
+    display: flex;
+}
+
+.items {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.items:nth-child(2) {
+    align-items: center;
+    margin: 2% 0 0 0;
+}
+
+/*Media query for Myself Flex box*/
+@media all and (max-width: 1180px) {
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .items {
+        flex: 1 1 100%;
+    }
+}
+
+/*Media query for displaying in Mobile and desktop for Myself id*/
+.img-responsive.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1180px) {
+    .img-responsive {
+        display: none;
+    }
+
+    .img-responsive.mobile {
+        display: block;
+    }
+}
+
+/*Card*/
+.image-Card {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+.cardcontainer {
+    padding: 2px 16px;
+}
+
+.image-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.image-cards:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.icard {
+    padding: 0.5% 0.5% 0.5% 7%;
+    width: 20%;
+    height: 0%;
+    margin: 1%;
+}
